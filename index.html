@@ -1,450 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Mohamed Mellouli - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
+<header>
+  <div class="top-header">
+    <img src="ressources/images/profile.jpg" alt="Portrait de Mohamed Mellouli" class="profile-pic">
     
-    <!-- Btn flottant gauche petit menu -->
+    <div class="text-container">
+      <h1 class="name">Mohamed Mellouli</h1>
+      <p class="subtitle">
+        Docteur en Génie Électrique &nbsp;||&nbsp;
+        Mastère en Systèmes Intelligents et Communicants &nbsp;||&nbsp;
+        Ingénieur en Électronique Industrielle
+      </p>
+    </div>
+  </div>
 
-    <div class="btn-rond-menu">
-        <div class="cont-ligne">
-            <div class="ligne-unique"></div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#formation">Formation</a>
+    <a href="#competences">Compétences</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#publications">Publications</a>
+    <a href="#cvs">CVs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- -------------------------- accueil section---------------------- --> 
+ <section id="accueil"><h2>À propos :</h2></section>
+
+
+
+  <!-- -------------------------- formation section---------------------- --> 
+  <section id="formation">
+    <h2>Formation :</h2>
+    <div class="timeline">
+      
+      <div class="card formation-1">
+        <div class="card-header">
+          <h3>2011 - 2014</h3>
         </div>
+        <p>Ingénieur en électronique industrielle</p>
+      </div>
+  
+      <div class="card formation-2">
+        <div class="card-header">
+          <h3>2014 - 2015</h3>
+          </div>
+        <p>Master en Systèmes Intelligents et Communicants (SIC)</p>
+      </div>
+  
+      <div class="card formation-3">
+        <div class="card-header">
+          <h3>2019 - 2022</h3>
+        </div>
+        <p>Doctorat en génie électrique</p>
+      </div>
+  
+    </div>
+  </section>
+
+    <!-- -------------------------- Compétences section---------------------- --> 
+
+  <section id="competences"><h2>Compétences</h2></section>
+
+
+     <!-- -------------------------- portfolio section---------------------- --> 
+  <section id="portfolio"><h2>Portfolio</h2></section>
+
+     <!-- -------------------------- publications section---------------------- --> 
+  <section id="publications"><h2>Publications</h2></section>
+
+
+     <!-- -------------------------- CVs section---------------------- --> 
+  <section id="cvs">
+ 
+    <div class="pdf-container">
+    <div class="pdf-viewer"><h1> CV Ingenieur en electronique de puissance </h1></div>
+    <div class="pdf-viewer">  <embed src="ressources\docs\CVs\cv_electronique_puissance.pdf" type="application/pdf" width="100%" height="100%"> </div>
     </div>
 
-    <!-- Navigation verticale -->
-
-    <nav class="nav-gauche">
-
-        <div class="blocs-menu">
-            <div class="cercle-portrait">
-                <img src="ressources/boss.svg" alt="portrait img">
-            </div>
-        </div>
-
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#accueil">
-                    Accueil
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#pres">
-                    Présentation
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#port">
-                    Portfolio
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#range">
-                    Compétences
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#contact">
-                    Contact
-                </a>
-            </span>
-        </div>
-
-
-
-        <div class="blocs-menu">
-            <div class="logo-cercle">
-                <a href="#contact">
-                    <img src="ressources/contact.svg" alt="logo contact">
-                </a>
-            </div>
-        </div>
-
-    </nav>
-
-    <!-- Section Accueil -->
-
-    <section class="accueil" id="accueil">
-        <h1>Bienvenue sur mon portfolio</h1>
-        <p class="txt-animation"></p>
-        <a href="#" class="btn-acc btn-acc1">Portfolio</a>
-        <a href="#" class="btn-acc btn-acc2">Expériences</a>
-
-        <div class="medias">
-            <a href="https://github.com" target="blank">
-                <div class="media media1">
-                    <img src="ressources/github.svg" alt="github icone" class="icone-medias">
-                </div>
-            </a>
-            <a href="https://linkedin.com" target="blank">
-                <div class="media media2">
-                    <img src="ressources/linkedin.svg" alt="linkedin icone" class="icone-medias">
-                </div>
-            </a>
-            <a href="https://twitter.com" target="blank">
-                <div class="media media3">
-                    <img src="ressources/twitter.svg" alt="twitter icone" class="icone-medias">
-                </div>
-            </a>
-        </div>
-
-        <a href="#pres">
-            <div class="btn-rond">
-                <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
-            </div>
-        </a>
-    </section>
-
-<!-- Section Présentation -->
-
-<section class="presentation" id="pres">
-
-    <h2 class="titre-pres">Lorem ipsum dolor sit amet.</h2>
-
-    <div class="container-presentation">
-
-        <div class="fond-forme"></div>
-
-        <div class="pres-gauche">
-            <h3>Laborum cumque aliquid ut pariatur, natus maxime.</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos quisquam rerum aliquam quasi vitae nisi expedita debitis cupiditate asperiores optio eveniet labore, vel beatae!</p>
-            <br>
-            <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi facere illum ullam exercitationem praesentium veniam?
-            </p>
-        </div>
-        
-        <div class="pres-droite">
-            <ul class="liste-presentation">
-                <li class="item-liste i1">
-                    <span class="chiffre-style">1.</span>
-                    <p class="txt-liste">UX Design expert</p>
-                </li>
-                <li class="item-liste i2">
-                    <span class="chiffre-style">2.</span>
-                    <p class="txt-liste">Spécialiste UI</p>
-                </li>
-                <li class="item-liste i3">
-                    <span class="chiffre-style">3.</span>
-                    <p class="txt-liste">Développeur Back-end</p>
-                </li>
-                <li class="item-liste i4">
-                    <span class="chiffre-style">4.</span>
-                    <p class="txt-liste">Développeur Front-End</p>
-                </li>
-                <li class="item-liste i5">
-                    <span class="chiffre-style">5.</span>
-                    <p class="txt-liste">Développeur Full-Stack</p>
-                </li>
-            </ul>
-        </div>
-        
+    <div class="pdf-container">
+      <div class="pdf-viewer"><h1> CV Ingenieur en traitement signal</h1></div>
+    <div class="pdf-viewer">
+      <embed src="ressources\docs\CVs\cv_traitement_signal.pdf" type="application/pdf" width="100%" height="100%"></div>
     </div>
 
-</section>
+    <div class="pdf-container">
+      <div class="pdf-viewer"><h1> CV Ingenieur en logiciels embarques</h1></div>
+    <div class="pdf-viewer">
+      <embed src="ressources\docs\CVs\cv_logiciels_embarques.pdf" type="application/pdf" width="100%" height="100%"></div>
+    </div>
 
-<!-- Section Portfolio -->
-
-<section class="portfolio" id="port">
-
-
-    <h2 class="titre-port">Mon Portfolio</h2>
-
-    <div class="cont-portfolio">
-
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/bootstrap.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/console.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/animcss.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-
-        <div class="item vague2">
-            <div class="cont-img-port">
-                <img src="ressources/bootstrapsite.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-
-        <div class="item vague2">
-            <div class="cont-img-port">
-                <img src="ressources/flex.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-
-        <div class="item vague2">
-            <div class="cont-img-port">
-                <img src="ressources/d3.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-
-        <div class="item vague3">
-            <div class="cont-img-port">
-                <img src="ressources/Menus.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-
-        <div class="item vague3">
-            <div class="cont-img-port">
-                <img src="ressources/projetsCars.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-
-        <div class="item vague3">
-            <div class="cont-img-port">
-                <img src="ressources/form.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrez le projet</a>
-        </div>
-
-
-       
-
+    <div class="pdf-container">
+    <div class="pdf-viewer"><h1> cv Ingenieur enfullstacke</h1></div>
+    <div class="pdf-viewer">
+      <embed src="ressources\docs\CVs\cv_fullstack.pdf" type="application/pdf" width="100%" height="100%"></div>
     </div>
 
 
-</section>
+  </section>
 
-<!-- Section Range -->
-
-<section class="section-range" id="range">
-
-    <h2 class="titre-exp">Mes compétences</h2>
-
-    <div class="grille-skill">
-
-
-        <div class="range-cont">
-            <p class="label-skill">JavaScript</p>
-            <p class="number-skill">90%</p>
-            <div class="barre-skill b1"></div>
-            <div class="barre-grises"></div>
+     <!-- -------------------------- Contact section---------------------- --> 
+  <section id="contact">
+  <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p><strong>Adresse :</strong> Marseille, France</p>
+        <p><strong>Portable :</strong> +33 6 04 98 48 30</p>
+        <p><strong>Email :</strong> mohamedellmellouli@gmail.com</p>
+        <div class="contact-social-icons">
+          <a href="https://www.linkedin.com/in/mohamed-mellouli-0b5b7b7a/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=fvlRy5cAAAAJ&hl=en&authuser=1" target="_blank" aria-label="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
         </div>
-        <div class="range-cont">
-            <p class="label-skill">SEO</p>
-            <p class="number-skill">75%</p>
-            <div class="barre-skill b2"></div>
-            <div class="barre-grises"></div>
-        </div>
-        <div class="range-cont">
-            <p class="label-skill">UI / UX</p>
-            <p class="number-skill">70%</p>
-            <div class="barre-skill b3"></div>
-            <div class="barre-grises"></div>
-        </div>
-
-
-        <div class="range-cont">
-            <p class="label-skill">Node JS</p>
-            <p class="number-skill">80%</p>
-            <div class="barre-skill b4"></div>
-            <div class="barre-grises"></div>
-        </div>
-        <div class="range-cont">
-            <p class="label-skill">Wordpress</p>
-            <p class="number-skill">70%</p>
-            <div class="barre-skill b5"></div>
-            <div class="barre-grises"></div>
-        </div>
-        <div class="range-cont">
-            <p class="label-skill">React JS</p>
-            <p class="number-skill">80%</p>
-            <div class="barre-skill b6"></div>
-            <div class="barre-grises"></div>
-        </div>
-
-
-    </div>
-
-</section>
-
-<!-- Section -->
-
-<section class="travail-exp" id="exp">
-
-    <h2 class="titre-travail-exp">Mes expériences</h2>
-
-    <div class="cont-exp-travail">
-
-        <div class="barre-verticale">
-            <div class="boule-ico">
-                <img src="ressources/google.svg" alt="icone gauche">
-            </div>
-            <div class="boule-ico">
-                <img src="ressources/instagram.svg" alt="icone gauche">
-            </div>
-            <div class="boule-ico">
-                <img src="ressources/amazon.svg" alt="icone gauche">
-            </div>
-            <div class="boule-ico">
-                <img src="ressources/apple.svg" alt="icone gauche">
-            </div>
-            <div class="boule-ico">
-                <img src="ressources/plane.svg" class="avion" alt="icone gauche">
-            </div>
-        </div>
-
-
-        <div class="flex-cont-bloc-exp">
-
-            <div class="bloc bloc1">
-                <div class="contenu-bloc">
-                    <p class="titre-section-bloc">Google, 2019</p>
-                    <p class="txt-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In perferendis dignissimos doloribus quaerat corrupti facere ratione modi vel. Voluptatem minima facilis eaque eum quia voluptatibus dolorem minus incidunt repellendus culpa?</p>
-                </div>
-            </div>
-
-            <div class="bloc bloc2">
-                <div class="contenu-bloc">
-                    <p class="titre-section-bloc">Instagram, 2017-2018</p>
-                    <p class="txt-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?</p>
-                </div>
-            </div>
-
-            <div class="bloc bloc3">
-                <div class="contenu-bloc">
-                    <p class="titre-section-bloc">Amazon, 2015-2016</p>
-                    <p class="txt-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?</p>
-                </div>
-            </div>
-
-            <div class="bloc bloc4">
-                <div class="contenu-bloc">
-                    <p class="titre-section-bloc">Apple, 2012-2014</p>
-                    <p class="txt-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vel ipsam nulla aliquid quae beatae ut et cum libero molestiae?</p>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-</section>
-
-
-<!-- Section Parallax -->
-
-<div class="section-parallax">
-    <p class="txt-par">
-        752 tasses de café
-    </p>
-    <p class="txt-par">
-        86 projets
-    </p>
-    <p class="txt-par">
-        38 clients
-    </p>
-</div>
-
-
-<!-- Section Contact -->
-
-<section class="section-contact" id="contact">
-
-    <h2><strong>Rentrons</strong> en Contact</h2>
-
-    <div class="container-form">
-
-        <form class="form-bloc">
-
-            <div class="form-groupe">
-                <label for="prenom">Prénom</label>
-                <input type="text" required maxlength="16" id="prenom">
-            </div>
-            <div class="form-groupe">
-                <label for="nom">Nom</label>
-                <input type="text" required maxlength="16" id="nom">
-            </div>
-            <div class="form-groupe">
-                <textarea id="txt" placeholder="Votre message" required></textarea>
-            </div>
-
-            <div class="form-groupe">
-                <input type="submit" value="ENVOYER" class="button-sub">
-            </div>
-
+      </div>
+      <div class="contact-form">
+        <form id="contact-form">
+          <input type="email" name="email" placeholder="Votre email" required />
+          <input type="text" name="subject" placeholder="Sujet" required />
+          <textarea name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
         </form>
-
+      </div>
     </div>
+ 
+  </section>
+</main>
+<script>
+  // Smooth scroll interne
+  document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior:'smooth' });
+    });
+  });
 
+  // Formulaire contact -> mailto
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const email   = form.email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
+    if (!email || !subject || !message) return alert('Veuillez remplir tous les champs.');
+    window.location.href = `mailto:mohamedellmellouli@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  });
+  </script>
 
-</section>
-
-<footer>
-    Tout Droits réservés &copy;
-</footer>
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>
