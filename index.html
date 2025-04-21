@@ -11,7 +11,7 @@
 
 <header>
   <div class="top-header">
-    <img src="ressources/images/profile.jpg" alt="Portrait de Mohamed Mellouli" class="profile-pic">
+    <img src="resources/images/profile.jpg" alt="Portrait de Mohamed Mellouli" class="profile-pic">
     
     <div class="text-container">
       <h1 class="name">Mohamed Mellouli</h1>
@@ -24,9 +24,10 @@
   </div>
 
   <nav>
-    <a href="#accueil">Accueil</a>
+    <a href="#accueil" class="active">Accueil</a>
     <a href="#formation">Formation</a>
     <a href="#competences">Compétences</a>
+    <a href="#experiences">Expériences</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#publications">Publications</a>
     <a href="#cvs">CVs</a>
@@ -50,6 +51,11 @@
           <h3>2011 - 2014</h3>
         </div>
         <p>Ingénieur en électronique industrielle</p>
+        <div class="clickable-area">
+          <a href="http://www.eniso.rnu.tn/fr/" target="_blank">
+            <img src="resources/images/eniso.jpg" alt="Lien image 1" />
+          </a>
+        </div>
       </div>
   
       <div class="card formation-2">
@@ -73,41 +79,76 @@
 
   <section id="competences"><h2>Compétences</h2></section>
 
+    <!-- -------------------------- experiences section---------------------- --> 
+
+    <section id="experiences"><h2>Expériences</h2></section>
+
 
      <!-- -------------------------- portfolio section---------------------- --> 
   <section id="portfolio"><h2>Portfolio</h2></section>
 
      <!-- -------------------------- publications section---------------------- --> 
-  <section id="publications"><h2>Publications</h2></section>
+  <section id="publications">
+    <div class="content">
+
+      <div class="pdf-container">
+      <div class="pdf-viewer">   <h1>Conference .....</h1>   </div>
+      <div class="pdf-viewer">  <embed src="resources\docs\Publications\mellouli2015.pdf" type="application/pdf" width="100%" height="100%"> </div>
+      </div>
+      <hr class="separator">
+
+      <div class="pdf-container">
+        <div class="pdf-viewer">   <h1>papier .....</h1>   </div>
+        <div class="pdf-viewer">  <embed src="resources\docs\Publications\mellouli2017.pdf" type="application/pdf" width="100%" height="100%"> </div>
+         </div>
+       <hr class="separator">
+    
+      <div class="pdf-container">
+        <div class="pdf-viewer">   <h1>papier .....</h1>   </div>
+        <div class="pdf-viewer">  <embed src="resources\docs\Publications\mellouli2021.pdf" type="application/pdf" width="100%" height="100%"> </div>
+      </div>
+      <hr class="separator">
+
+      <div class="pdf-container">
+        <div class="pdf-viewer">   <h1>papier .....</h1>   </div>
+        <div class="pdf-viewer">  <embed src="resources\docs\Publications\mellouli2024.pdf" type="application/pdf" width="100%" height="100%"> </div>
+      </div>
+    </div>
+
+  </section>
 
 
      <!-- -------------------------- CVs section---------------------- --> 
   <section id="cvs">
- 
-    <div class="pdf-container">
-    <div class="pdf-viewer"><h1> CV Ingenieur en electronique de puissance </h1></div>
-    <div class="pdf-viewer">  <embed src="ressources\docs\CVs\cv_electronique_puissance.pdf" type="application/pdf" width="100%" height="100%"> </div>
-    </div>
+    <div class="content">
 
-    <div class="pdf-container">
-      <div class="pdf-viewer"><h1> CV Ingenieur en traitement signal</h1></div>
-    <div class="pdf-viewer">
-      <embed src="ressources\docs\CVs\cv_traitement_signal.pdf" type="application/pdf" width="100%" height="100%"></div>
-    </div>
+      <div class="pdf-container">
+      <div class="pdf-viewer"><h1> CV Ingenieur en electronique de puissance </h1></div>
+      <div class="pdf-viewer">  <embed src="resources\docs\CVs\cv_electronique_puissance.pdf" type="application/pdf" width="100%" height="100%"> </div>
+      </div>
+      <hr class="separator">
 
-    <div class="pdf-container">
-      <div class="pdf-viewer"><h1> CV Ingenieur en logiciels embarques</h1></div>
-    <div class="pdf-viewer">
-      <embed src="ressources\docs\CVs\cv_logiciels_embarques.pdf" type="application/pdf" width="100%" height="100%"></div>
-    </div>
+      <div class="pdf-container">
+        <div class="pdf-viewer"><h1> CV Ingenieur en traitement signal</h1></div>
+      <div class="pdf-viewer">
+        <embed src="resources\docs\CVs\cv_traitement_signal.pdf" type="application/pdf" width="100%" height="100%"></div>
+      </div>
 
-    <div class="pdf-container">
-    <div class="pdf-viewer"><h1> cv Ingenieur enfullstacke</h1></div>
-    <div class="pdf-viewer">
-      <embed src="ressources\docs\CVs\cv_fullstack.pdf" type="application/pdf" width="100%" height="100%"></div>
-    </div>
+      <hr class="separator">
+      <div class="pdf-container">
+        <div class="pdf-viewer"><h1> CV Ingenieur en logiciels embarques</h1></div>
+      <div class="pdf-viewer">
+        <embed src="resources\docs\CVs\cv_logiciels_embarques.pdf" type="application/pdf" width="100%" height="100%"></div>
+      </div>
 
+      <hr class="separator">
+      <div class="pdf-container">
+      <div class="pdf-viewer"><h1> cv Ingenieur en full stacke</h1></div>
+      <div class="pdf-viewer">
+        <embed src="resources\docs\CVs\cv_fullstack.pdf" type="application/pdf" width="100%" height="100%"></div>
+      </div>
 
+  </div>
   </section>
 
      <!-- -------------------------- Contact section---------------------- --> 
@@ -139,26 +180,7 @@
  
   </section>
 </main>
-<script>
-  // Smooth scroll interne
-  document.querySelectorAll('nav a').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior:'smooth' });
-    });
-  });
 
-  // Formulaire contact -> mailto
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const email   = form.email.value.trim();
-    const subject = form.subject.value.trim();
-    const message = form.message.value.trim();
-    if (!email || !subject || !message) return alert('Veuillez remplir tous les champs.');
-    window.location.href = `mailto:mohamedellmellouli@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-  });
-  </script>
-
+<script src="app.js"></script>
 </body>
 </html>

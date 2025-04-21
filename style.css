@@ -81,6 +81,23 @@ nav a:hover {
   color: var(--hover-color);
 }
 
+
+nav a.active {
+  color: var(--hover-color);
+  position: relative;
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  /* height: 3px; */
+  background-color: var(--hover-color);
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -127,7 +144,7 @@ main section {
   background-color: white;
   border-radius: 10%;
   width: 20rem;
-  height: 30rem;
+  height: 25rem;
   padding: 1rem;
   text-align: center;
   position: relative;
@@ -141,9 +158,9 @@ main section {
 /* Header section */
 .card-header {
   background-color: #ccc;
-  border-radius: 10%;
-  padding: 3% 3%;
-  margin-top: 2rem;
+  border-radius: 50%;
+  padding: 5% 5%;
+  margin-top: 0rem;
   margin-left: 2rem;
   margin-right: 2rem;
   width: 15rem;
@@ -174,14 +191,48 @@ main section {
 }
 
 .formation-2 .card-header {
-  background-color: #2ec4b6;
+  background-color: #51C9BDFF;
 }
 
 .formation-3 .card-header {
   background-color: #fdbb2d;
 }
 
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Section CV*/
+
+.clickable-area {
+
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.clickable-area img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Section CV & publications*/
+
+#cvs { background-color: #87cfeb42}   /* # */
+#publications { background-color: #2dfd6121;}
+
+.content {
+  width: 100%;
+}
+
+.publications-content {
+  width: 100%;
+  background-color: #fda32d44;
+}
+
+#cvs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
 
 .pdf-container {
   display: flex;
@@ -191,12 +242,19 @@ main section {
 
 .pdf-viewer {
   flex: 1;
-  width: 50%;
+  width: 65%;
   padding-left: 5%;
-  height: 60vh; /* toute la hauteur de la fenêtre */
+  height: 65vh; /* toute la hauteur de la fenêtre */
   box-sizing: border-box;
 }
 
+.separator {
+  border: none;
+  height: 4px;
+  background-color: #003366;
+  width: 100%;
+  margin: 20px 0;
+}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% contact */
 .contact-wrapper { display: flex; flex-wrap: wrap; background: white; border-radius: var(--radius); box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 30px; max-width: 1100px; /* élargi la largeur de page de 20% */ margin: 40px auto; }
@@ -233,10 +291,10 @@ main section {
 .contact-social-icons a { display: flex; align-items: center; justify-content: center; transition: opacity 0.3s; }
 .contact-social-icons a:hover { opacity: 0.8; }
 .contact-social-icons img { width: 80px; height: auto; object-fit: contain; }
-.contact-form { flex: 1 1 300px; padding-left: 20px; }
+.contact-form { flex: 1; padding-left: 30px; }
 .contact-form form { display: flex; flex-direction: column; }
-.contact-form input, .contact-form textarea { margin-bottom: 15px; padding: 12px; border: 1px solid #ccc; border-radius: var(--radius); }
-.contact-form button { padding: 14px; background: var(--primary-color); color: white; border: none; border-radius: var(--radius); cursor: pointer; transition: background 0.3s; }
+.contact-form input, .contact-form textarea { margin-bottom: 15px; padding: 20px; border: 1px solid #ccc; border-radius: var(--radius); }
+.contact-form button { padding: 20px; background: var(--primary-color); color: white; border: none; border-radius: var(--radius); cursor: pointer; transition: background 0.3s; }
 .contact-form button:hover { background: var(--accent-color); }
 
 footer { text-align:center; padding:20px; background:var(--primary-color); color:white; margin-top:40px; }
