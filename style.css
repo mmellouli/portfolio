@@ -136,16 +136,16 @@ main section {
   justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 /* Card style */
 .card {
   background-color: white;
   border-radius: 10%;
-  width: 20rem;
+  width: 22rem;
   height: 25rem;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   position: relative;
   transition: transform 0.3s ease;
@@ -181,7 +181,7 @@ main section {
   margin: 0.25rem 0.25rem;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-top: 6rem;
+  margin-top: 1.5rem;
 }
 
 
@@ -200,17 +200,30 @@ main section {
 
 
 .clickable-area {
-
-  border-radius: 20px;
-  display: inline-block;
+  display: inline-flex;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 0px;
+  transition: background-color 0.3s ease;
 }
 
 .clickable-area img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+/* Hover (agrandissement doux + lumière) */
+.clickable-area:hover {
+  transform: scale(1.15);
+}
+
+/* Clic (effet pop léger) */
+.clickable-area:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
 }
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Section CV & publications*/
 
