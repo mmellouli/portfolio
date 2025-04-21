@@ -35,6 +35,15 @@ header {
   padding: 1rem 2rem;
 }
 
+
+.menu-slider {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow-x: auto;
+  flex: 0 0 auto;}
+
+
 .profile-pic {
   width: var(--profile-size);
   height: var(--profile-size);
