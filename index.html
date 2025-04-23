@@ -105,70 +105,125 @@
   <section id="publications">
     <div class="content">
 
-      <div class="pdf-container">
-      <div class="pdf-viewer">   
-     
-        <h1>Conference .....</h1>  
-      </div>
-        <div class="pdf-viewer"> 
-          <img src="resources/images/Publications/mellouli2015.png" alt="Illustration conférence" class="conference-image">
-        <div class="cv-buttons">
-          <a href="resources\docs\Publications\mellouli2015.pdf" target="_blank" class="cv-button">Voir</a>
-          <a href="resources\docs\Publications\mellouli2015.pdf" download class="cv-button">Télécharger</a>
-        </div>
-      </div> 
-    </div>
+      <div class="publication-card">
 
-
-      <hr class="separator">
-
-      <div class="pdf-container">
-        <div class="pdf-viewer"> 
-          <h1>papier .....</h1>  
-        </div> 
-          <div class="pdf-viewer"> 
-          <img src="resources/images/Publications/mellouli2017.png" alt="Illustration conférence" class="conference-image">
-          <div class="cv-buttons">
-            <a href="resources\docs\Publications\mellouli2017.pdf" target="_blank" class="cv-button">Voir</a>
-            <a href="resources\docs\Publications\mellouli2017.pdf" download class="cv-button">Télécharger</a>
-          </div>
-        </div> 
-      </div>
-
-       <hr class="separator">
-    
-      <div class="pdf-container">
-        <div class="pdf-viewer">
-          
-          <h1>papier .....</h1>  
-        </div> 
-          <div class="pdf-viewer">
-          <img src="resources/images/Publications/mellouli2021.png" alt="Illustration conférence" class="conference-image">
-          <div class="cv-buttons">
-            <a href="resources\docs\Publications\mellouli2021.pdf" target="_blank" class="cv-button">Voir</a>
-            <a href="resources\docs\Publications\mellouli2021.pdf" download class="cv-button">Télécharger</a>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-      <hr class="separator">
-
-      <div class="pdf-container">
-        <div class="pdf-viewer">  
-    
-       <h1>papier .....</h1>  
-      </div> 
-      <div class="pdf-viewer">
-        <img src="resources/images/Publications/mellouli2024.png" alt="Illustration conférence" class="conference-image">
+        <div class="conference-name">
+          IEEE Transactions on Instrumentation and Measurement, vol. 73, pp. 1-11, 2024
+            </div>
+            <img src="resources/images/Publications/mellouli2024.png" alt="Illustration conférence" class="conference-image">
+            <div class="publication-abstract">
+              <pre>
+Résumé : Cet article présente un algorithme de démodulation basé sur un signal retardé, capable d’extraire rapidement
+       et avec précision les séquences positive, négative et le DC-offset dans la tension du réseau, même en cas de 
+       dérive de fréquence. Un formalisme simplifié est proposé pour faciliter l’implémentation en temps réel.
+       L’algorithme est intégré à une boucle à verrouillage de phase d’ordre trois (TQT1-PLL) pour estimer la fréquence
+       et l’angle de phase du réseau. Les résultats de simulation et d’expérimentation montrent que la méthode 
+       permet une estimation précise sans ondulations, même en présence de perturbations, et offre de meilleures 
+       performances dynamiques que les PLL adaptatives.
+            </pre>
+            </div>
+            <div class="publication-tags">
+              <pre>
+Mots-clés : Décalage en courant continu (DC-offset), production d’énergie distribuée, déviation de fréquence,
+            synchronisation au réseau, filtre à moyenne glissante (MAF), boucle à verrouillage de phase (PLL),
+            </pre>
+            </div>
+      
         <div class="cv-buttons">
           <a href="resources\docs\Publications\mellouli2024.pdf" target="_blank" class="cv-button">Voir</a>
           <a href="resources\docs\Publications\mellouli2024.pdf" download class="cv-button">Télécharger</a>
         </div>
       </div>
-    </div>
 
+
+      <div class="publication-card">
+
+        <div class="conference-name">
+          IEEE Transactions on Energy Conversion, vol. 36, no. 3, pp. 1600-1613, Sept. 2021
+        </div>
+        <img src="resources/images/Publications/mellouli2021.png" alt="Illustration conférence" class="conference-image">
+        <div class="publication-abstract">
+          <pre>
+Résumé : Cet article présente la conception d’une nouvelle architecture de verrouillage de phase,
+       nommée TQT1-PLL, combinant un filtre MAF d’ordre trois et un préfiltre FDSC simplifié.
+       Cette architecture est conçue pour améliorer la synchronisation au réseau électrique 
+       en présence d’harmoniques et de dérives fréquentielles.Validée par des simulations 
+       et des expérimentations sur DSP, la solution proposée permet une estimation précise
+       de la fréquence et de la phase, sans recourir à des algorithmes adaptatifs, 
+       tout en assurant une suppression efficace du décalage continu (DC-offset) 
+          </pre>
+        </div>
+        <div class="publication-tags">
+          <pre>
+Mots-clés : Annulation de signal retardé (DSC), production décentralisée d’énergie,
+          distorsions harmoniques, filtre à moyenne mobile (MAF), boucle à verrouillage de phase (PLL),
+          qualité de l’énergie électrique, stabilité du système.
+          </pre>
+        </div>
+        <div class="cv-buttons">
+          <a href="resources\docs\Publications\mellouli2021.pdf" target="_blank" class="cv-button">Voir</a>
+          <a href="resources\docs\Publications\mellouli2021.pdf" download class="cv-button">Télécharger</a>
+        </div>
+      </div> 
+
+
+      <div class="publication-card">
+
+            <img src="resources/images/Publications/mellouli2017.png" alt="Illustration conférence" class="conference-image">
+            <div class="publication-abstract">
+<pre>
+  Résumé : Cet article présente une synthèse des récents algorithmes améliorés de boucles à verrouillage de phase (PLL)
+         utilisant des filtres à moyenne mobile (MAF), utilisés pour la synchronisation des convertisseurs connectés
+         au réseau. Ces méthodes ont montré une meilleure robustesse face aux perturbations du réseau comparées aux
+         techniques classiques. Une étude comparative expérimentale de quatre algorithmes MAF-PLL est menée,
+         testés sous différents types de défauts réseau.
+         Les résultats montrent que les performances varient considérablement selon la nature de la perturbation.
+</pre>
+            </div>
+            <div class="publication-tags">
+              <pre>
+Mots-clés :  Boucle à verrouillage de phase (PLL) , Filtre à moyenne adaptative (MAF) , Défauts du réseau
+              Réseau intelligent (Smart Grid) ; Système de production d’énergie distribuée (DPSGS)
+              </pre>
+           
+            </div>
+
+          <div class="cv-buttons">
+            <a href="resources\docs\Publications\mellouli2017.pdf" target="_blank" class="cv-button">Voir</a>
+            <a href="resources\docs\Publications\mellouli2017.pdf" download class="cv-button">Télécharger</a>
+          </div>
+        </div> 
+
+
+      <div class="publication-card">
+
+        <img src="resources/images/Publications/mellouli2015.png" alt="Illustration conférence" class="conference-image">
+        <div class="publication-abstract">
+        <pre>
+Résumé: Cette conférence présente une étude comparative de plusieurs versions améliorées de boucles 
+        à verrouillage de phase (PLL) utilisant des filtres à moyenne mobile (MAF). 
+        Ces méthodes récentes permettent de supprimer les effets des harmoniques, 
+        du décalage continu (DC offset) et des tensions déséquilibrées. 
+        Toutefois, elles présentent une réponse dynamique limitée à cause d'une bande passante réduite.
+        Pour améliorer cette réponse, de nouvelles variantes de MAF-PLL ont été développées.
+        Leur performance est évaluée par simulations numériques, dans cinq situations de perturbation du réseau.
+        </pre>
+        </div>
+        <div class="publication-tags">
+        <pre>
+Mots-clés : Réseau intelligent (Smart-grid), micro-réseau (micro-grid), boucle à verrouillage de phase (PLL),
+          MAF-PLL, SRF-PLL, DSOGI-PLL,perturbation du réseau
+        </pre>             
+        </div>
+     
+
+      <div class="cv-buttons">
+        <a href="resources\docs\Publications\mellouli2015.pdf" target="_blank" class="cv-button">Voir</a>
+        <a href="resources\docs\Publications\mellouli2015.pdf" download class="cv-button">Télécharger</a>
       </div>
+  </div>
+
+
     </div>
 
   </section>
