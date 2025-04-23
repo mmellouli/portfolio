@@ -264,10 +264,13 @@ main section {
 
 .pdf-viewer {
   flex: 1;
+  justify-content: center;
   width: 65%;
   padding-left: 5%;
   height: 65vh; /* toute la hauteur de la fenêtre */
   box-sizing: border-box;
+ 
+
 }
 
 .separator {
@@ -276,6 +279,31 @@ main section {
   background-color: #003366;
   width: 100%;
   margin: 20px 0;
+}
+
+.cv-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 1rem;
+}
+
+.cv-button {
+  padding: 8px 16px;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #0055a5;
+}
+
+.conference-image {
+  max-width: 100%;
+  height: auto;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% contact */
