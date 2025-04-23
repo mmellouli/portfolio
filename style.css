@@ -239,9 +239,16 @@ main section {
 #cvs { background-color: #87cfeb42}   /* # */
 #publications { background-color: #2dfd6121;}
 
-.content-text {
-  width: 90%;
-  max-width: 1250px;
+pre {
+  white-space: pre-wrap;       /* Conserve les retours à la ligne */
+  word-wrap: break-word;       /* Coupe les mots trop longs */
+  width: 100%;                 /* S’adapte à la largeur du conteneur */
+  box-sizing: border-box;      /* Inclut le padding dans la largeur */
+  padding: 10px;               /* Espace intérieur */
+  border-radius: 5px;          /* Coins arrondis (optionnel) */
+  overflow-x: auto;            /* Scroll horizontal si besoin */
+  font-family: monospace;      /* Style typique des blocs <pre> */
+  font-size: 1.2rem;
 }
 
 
