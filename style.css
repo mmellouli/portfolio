@@ -239,8 +239,15 @@ main section {
 #cvs { background-color: #87cfeb42}   /* # */
 #publications { background-color: #2dfd6121;}
 
+.content-text {
+  width: 90%;
+  max-width: 1250px;
+}
+
+
 .content {
   width: 100%;
+  
 }
 
 .publications-content {
